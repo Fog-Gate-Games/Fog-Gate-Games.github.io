@@ -31,10 +31,62 @@
         <h1>Some places<br /><span>remember.</span></h1>
         <p class="hero-lead">A quiet hospital. A familiar corridor. A memory that does not sit still.</p>
         <p class="hero-copy">This is a spoiler-free glimpse into the atmosphere of <strong>The Girl in Seiran</strong> — a story about fear, memory and the things we carry long after we believe they are gone.</p>
-        <a class="open-file" href="#case-file">Open the case file <span>↓</span></a>
+        <a class="open-file" href="#case-file" data-open-dossier>Open the case file <span>↓</span></a>
       </div>
       <div class="hero-code" aria-hidden="true">FGG / SEIRAN / 01</div>
     </section>
+
+    <div class="dossier-experience" aria-hidden="true">
+      <div class="dossier-stage">
+        <button class="dossier-close" type="button" aria-label="Close case file">Close file ×</button>
+        <div class="evidence-table" aria-hidden="true"></div>
+        <div class="case-envelope" aria-hidden="true">
+          <div class="envelope-back"></div>
+          <div class="envelope-label"><span>SEIRAN HOSPITAL</span><strong>CASE FILE 01</strong><small>PUBLIC ARCHIVE // NO SPOILERS</small></div>
+          <div class="envelope-tab">CONFIDENTIAL</div>
+          <div class="envelope-flap"></div>
+        </div>
+
+        <div class="case-pages" role="dialog" aria-modal="true" aria-label="Seiran case file">
+          <article class="case-page active" data-page="0">
+            <div class="paper-meta"><span>DOCUMENT 01 / LOCATION</span><span>FGG-SEIRAN-01</span></div>
+            <div class="paper-stamp">PUBLIC<br />ARCHIVE</div>
+            <p class="paper-kicker">SEIRAN HOSPITAL // LOCATION FILE</p>
+            <h2>Some buildings keep more than records.</h2>
+            <p class="paper-lead">Seiran Hospital is presented as a place of order: bright corridors, clinical routines and rooms designed to feel safe.</p>
+            <p>But familiarity can become uncomfortable when the smallest details stop matching what you remember. In <strong>The Girl in Seiran</strong>, the hospital is not simply a backdrop. Its spaces, documents, silence and repetition quietly participate in the story.</p>
+            <div class="paper-note"><span>OBSERVATION</span><p>Look closely. The environment often speaks before anyone does.</p></div>
+          </article>
+
+          <article class="case-page" data-page="1">
+            <div class="paper-meta"><span>DOCUMENT 02 / SUBJECT</span><span>FGG-SEIRAN-02</span></div>
+            <div class="paper-stamp">SUBJECT<br />AOI</div>
+            <p class="paper-kicker">SUBJECT FILE // AOI</p>
+            <h2>A girl carrying questions she cannot ignore.</h2>
+            <p class="paper-lead">Aoi stands at the center of the journey, but understanding her is not a matter of reading a simple profile.</p>
+            <p>Her experience is shaped by uncertainty, emotion and fragments that refuse to arrange themselves neatly. The player follows what she notices, what she fears and what she is willing to face — without being told which memory deserves to be trusted.</p>
+            <div class="paper-note"><span>STATUS</span><p>Personal history partially withheld. Further information remains inside the game.</p></div>
+          </article>
+
+          <article class="case-page" data-page="2">
+            <div class="paper-meta"><span>DOCUMENT 03 / THEME</span><span>FGG-SEIRAN-03</span></div>
+            <div class="paper-stamp">MEMORY<br />UNSTABLE</div>
+            <p class="paper-kicker">THEMATIC FILE // MEMORY</p>
+            <h2>Memory is evidence. Memory is also unreliable.</h2>
+            <p class="paper-lead">The past does not arrive in Seiran as a clean timeline. It surfaces in pieces — sometimes protective, sometimes painful, sometimes incomplete.</p>
+            <p>The game uses memory as part of its psychological tension: not as a puzzle to solve instantly, but as something that changes the emotional meaning of a place as the player moves through it.</p>
+            <div class="paper-note"><span>WARNING</span><p>Some answers change the question instead of closing the case.</p></div>
+          </article>
+
+          <div class="case-controls">
+            <button class="case-prev" type="button">← Previous file</button>
+            <div class="case-progress"><span class="active"></span><span></span><span></span></div>
+            <button class="case-next" type="button">Next file →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="case-file" class="case-file section-shell">
       <div class="case-heading reveal">
         <div><p class="eyebrow">CASE FILE // NO SPOILERS</p><span class="red-line"></span></div>
