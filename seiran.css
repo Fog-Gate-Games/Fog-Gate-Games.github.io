@@ -32,3 +32,16 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.section-s
 @media(max-width:700px){.dossier-close{top:14px;right:14px}.case-envelope{width:min(88vw,680px)}.case-pages{width:calc(100% - 18px);height:84vh}.case-page{inset:0 0 66px;padding:30px 22px}.paper-meta{font-size:.48rem}.paper-stamp{right:5%;top:13%;opacity:.7}.case-page h2{font-size:clamp(2.55rem,13vw,4.6rem)}.case-controls{grid-template-columns:1fr auto 1fr}.case-controls button{font-size:.62rem}.case-progress span{width:20px}}
 @media(prefers-reduced-motion:reduce){.dossier-experience *{animation:none!important;transition:none!important}.dossier-experience.opening .envelope-flap{transform:rotateX(178deg)}.dossier-experience.revealed .case-pages{opacity:1;transform:none}}
 .dossier-experience.closing{opacity:0;transition:opacity .35s ease}
+
+/* Single-screen Seiran landing: the dossier is the only deeper layer. */
+.seiran-landing{height:100svh;overflow:hidden}
+.seiran-landing main{height:100svh;overflow:hidden}
+.seiran-landing .seiran-hero{height:100svh;min-height:100svh}
+.seiran-landing .hero-content{padding-bottom:58px}
+@media(max-height:760px){
+  .seiran-landing .hero-content{padding-top:118px;padding-bottom:30px}
+  .seiran-landing .hero-content h1{font-size:clamp(3.7rem,9vw,7.2rem)}
+  .seiran-landing .hero-lead{margin-top:20px}
+  .seiran-landing .hero-copy{margin-top:12px;line-height:1.6}
+  .seiran-landing .open-file{margin-top:22px}
+}
