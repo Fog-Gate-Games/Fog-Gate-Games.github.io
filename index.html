@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070707" />
+  <meta name="description" content="Fog Gate Games is an independent game studio creating atmospheric, story-driven experiences." />
+  <title>Fog Gate Games</title>
+  <link rel="icon" href="assets/fog-gate-games-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Fog Gate Games home">
+      <img src="assets/fog-gate-games-logo.png" alt="Fog Gate Games logo" />
+      <span>Fog Gate Games</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#studio">Studio</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Independent game studio</p>
+        <h1>Stories beyond<br /><span>the familiar.</span></h1>
+        <p class="hero-text">Fog Gate Games creates atmospheric, character-driven games where mystery, emotion and unsettling worlds meet.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#games">Explore our games</a>
+          <a class="button ghost" href="#studio">About the studio</a>
+        </div>
+      </div>
+      <div class="hero-mark reveal" aria-hidden="true">
+        <img src="assets/fog-gate-games-logo.png" alt="" />
+      </div>
+    </section>
+    <section id="studio" class="studio section-shell section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The studio</p>
+        <h2>Small team. Strong identity.</h2>
+      </div>
+      <div class="studio-grid">
+        <p class="lead reveal">We are building games with a distinct visual language, memorable characters and worlds that reward curiosity.</p>
+        <div class="pillars reveal">
+          <article>
+            <span>01</span>
+            <h3>Atmosphere first</h3>
+            <p>Sound, space and visual direction work together to make every location feel intentional.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Character-led stories</h3>
+            <p>Our worlds are designed around people, secrets and emotional consequences.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Independent by design</h3>
+            <p>We keep the creative process close, focused and personal from concept to release.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="games section-pad">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our games</p>
+          <h2>Currently in development.</h2>
+        </div>
+        <article class="game-card reveal">
+          <div class="game-cover">
+            <img src="assets/the-girl-in-seiran-cover.png" alt="The Girl in Seiran cover art" />
+            <span class="status">In development</span>
+          </div>
+          <div class="game-info">
+            <p class="game-kicker">Psychological horror · Narrative adventure</p>
+            <h3>The Girl in Seiran</h3>
+            <p>A dark story-driven experience set around Seiran Hospital, following Aoi through memory, fear and a mystery that refuses to stay buried.</p>
+            <div class="game-meta">
+              <span>Single-player</span>
+              <span>PC</span>
+              <span>In development</span>
+            </div>
+            <a class="text-link" href="#contact">Follow development <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-shell section-pad">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">Fog Gate Games</p>
+          <h2>We are building our first world.</h2>
+          <p>Official studio links, development updates and release information will be added here as the project grows.</p>
+        </div>
+        <a class="button primary" href="#home">Back to the gate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div class="footer-brand">
+      <img src="assets/fog-gate-games-logo.png" alt="" />
+      <span>Fog Gate Games</span>
+    </div>
+    <p>© <span id="year"></span> Fog Gate Games. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
