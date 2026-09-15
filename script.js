@@ -42,3 +42,15 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-38% 0px -52% 0px', threshold: 0 });
 
 document.querySelectorAll('main section[id]').forEach((section) => sectionObserver.observe(section));
+
+const enterSeiranLink = document.querySelector('.enter-seiran-link');
+enterSeiranLink?.addEventListener('click', (event) => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  event.preventDefault();
+  const portal = document.createElement('div');
+  portal.className = 'portal-transition';
+  portal.innerHTML = '<div class="portal-transition-inner"><span>FOG GATE GAMES // ARCHIVE</span><strong>ENTERING SEIRAN</strong></div>';
+  document.body.appendChild(portal);
+  requestAnimationFrame(() => portal.classList.add('active'));
+  window.setTimeout(() => { window.location.href = enterSeiranLink.href; }, 850);
+});
