@@ -42,14 +42,14 @@ const updateCasePage = (nextIndex, direction = 1) => {
   currentPage = nextIndex;
   dots.forEach((dot, index) => dot.classList.toggle('active', index === currentPage));
   prevButton.disabled = currentPage === 0;
-  nextButton.textContent = currentPage === pages.length - 1 ? 'Close file →' : 'Next file →';
+  nextButton.textContent = currentPage === pages.length - 1 ? (window.FGG_I18N?.t('close') || 'Close file →') : (window.FGG_I18N?.t('next') || 'Next file →');
 };
 const showDossier = () => {
   currentPage = 0;
   pages.forEach((page, index) => page.classList.toggle('active', index === 0));
   dots.forEach((dot, index) => dot.classList.toggle('active', index === 0));
   prevButton.disabled = true;
-  nextButton.textContent = 'Next file →';
+  nextButton.textContent = window.FGG_I18N?.t('next') || 'Next file →';
   dossier.classList.remove('closing');
   dossier.classList.add('open');
   dossier.setAttribute('aria-hidden', 'false');
@@ -69,6 +69,9 @@ const hideDossier = () => {
 
 openDossier?.addEventListener('click', (event) => { event.preventDefault(); showDossier(); });
 closeDossier?.addEventListener('click', hideDossier);
+window.addEventListener('fgg:languagechange', () => {
+  if (nextButton) nextButton.textContent = currentPage === pages.length - 1 ? (window.FGG_I18N?.t('close') || 'Close file →') : (window.FGG_I18N?.t('next') || 'Next file →');
+});
 prevButton?.addEventListener('click', () => updateCasePage(currentPage - 1, -1));
 nextButton?.addEventListener('click', () => currentPage === pages.length - 1 ? hideDossier() : updateCasePage(currentPage + 1, 1));
 

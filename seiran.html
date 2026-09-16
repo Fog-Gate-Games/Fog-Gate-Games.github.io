@@ -19,7 +19,17 @@
   <header class="archive-header">
     <a class="archive-brand" href="index.html"><img src="assets/fog-gate-games-logo.png" alt="Fog Gate Games logo" /><span><strong>Fog Gate Games</strong><small>Seiran Archive</small></span></a>
     <div class="archive-status"><i></i><span>Public preview</span></div>
-    <a class="exit-link" href="index.html#games">Leave Seiran <span>↖</span></a>
+    <div class="archive-actions">
+      <div class="language-switcher">
+        <button class="language-current" type="button" aria-label="Change language"><span class="language-globe">◎</span><span class="language-current-label">English</span><span class="language-chevron">⌄</span></button>
+        <div class="language-menu" role="menu">
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="pt">Portuguese</button>
+          <button type="button" data-lang="es">Spanish</button>
+        </div>
+      </div>
+      <a class="exit-link" href="index.html#games">Leave Seiran <span>↖</span></a>
+    </div>
   </header>
 
   <main>
@@ -39,7 +49,7 @@
     <div class="dossier-experience" aria-hidden="true">
       <div class="dossier-stage">
         <button class="dossier-close" type="button" aria-label="Close case file">Close file ×</button>
-        <div class="evidence-table" aria-hidden="true"></div>
+        <div class="evidence-table" data-label="CASE FILE / SEIRAN" aria-hidden="true"></div>
         <div class="case-envelope" aria-hidden="true">
           <div class="envelope-back"></div>
           <div class="envelope-label"><span>SEIRAN HOSPITAL</span><strong>CASE FILE 01</strong><small>PUBLIC ARCHIVE // NO SPOILERS</small></div>
@@ -90,6 +100,7 @@
   </main>
 
   <div class="entry-curtain" aria-hidden="true"><div class="curtain-mark"><span>FOG GATE GAMES</span><strong>ENTERING SEIRAN</strong></div></div>
+  <script src="i18n.js"></script>
   <script src="seiran.js"></script>
 </body>
 </html>

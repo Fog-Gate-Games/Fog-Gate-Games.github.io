@@ -49,7 +49,9 @@ enterSeiranLink?.addEventListener('click', (event) => {
   event.preventDefault();
   const portal = document.createElement('div');
   portal.className = 'portal-transition';
-  portal.innerHTML = '<div class="portal-transition-inner"><span>FOG GATE GAMES // ARCHIVE</span><strong>ENTERING SEIRAN</strong></div>';
+  const enteringLabel = window.FGG_I18N?.t('entering') || 'ENTERING SEIRAN';
+  const archiveLabel = window.FGG_I18N?.t('archive') || 'FOG GATE GAMES // ARCHIVE';
+  portal.innerHTML = `<div class="portal-transition-inner"><span>${archiveLabel}</span><strong>${enteringLabel}</strong></div>`;
   document.body.appendChild(portal);
   requestAnimationFrame(() => portal.classList.add('active'));
   window.setTimeout(() => { window.location.href = enterSeiranLink.href; }, 850);

@@ -26,7 +26,17 @@
       <a href="#vision">Vision</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="header-cta" href="#vision">Our vision <span>↗</span></a>
+    <div class="header-tools">
+      <a class="header-cta" href="#vision">Our vision <span>↗</span></a>
+      <div class="language-switcher">
+        <button class="language-current" type="button" aria-label="Change language"><span class="language-globe">◎</span><span class="language-current-label">English</span><span class="language-chevron">⌄</span></button>
+        <div class="language-menu" role="menu">
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="pt">Portuguese</button>
+          <button type="button" data-lang="es">Spanish</button>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -123,6 +133,7 @@
     <a href="#home" class="footer-top">TOP ↑</a>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
