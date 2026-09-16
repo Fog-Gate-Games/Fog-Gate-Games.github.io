@@ -1,13 +1,15 @@
 (() => {
   const languageNames = {
-    en: { current: 'English', options: ['English', 'Portuguese', 'Spanish'] },
-    pt: { current: 'Português', options: ['Inglês', 'Português', 'Espanhol'] },
-    es: { current: 'Español', options: ['Inglés', 'Portugués', 'Español'] },
+    en: { current: 'English', options: ['English', 'Portuguese', 'Spanish', 'Japanese'] },
+    pt: { current: 'Português', options: ['Inglês', 'Português', 'Espanhol', 'Japonês'] },
+    es: { current: 'Español', options: ['Inglés', 'Portugués', 'Español', 'Japonés'] },
+    ja: { current: '日本語', options: ['英語', 'ポルトガル語', 'スペイン語', '日本語'] },
   };
   const dynamic = {
     en: { next: 'Next file →', close: 'Close file →', entering: 'ENTERING SEIRAN', archive: 'FOG GATE GAMES // ARCHIVE' },
     pt: { next: 'Próximo arquivo →', close: 'Fechar arquivo →', entering: 'ENTRANDO EM SEIRAN', archive: 'FOG GATE GAMES // ARQUIVO' },
     es: { next: 'Siguiente archivo →', close: 'Cerrar archivo →', entering: 'ENTRANDO EN SEIRAN', archive: 'FOG GATE GAMES // ARCHIVO' },
+    ja: { next: '次のファイル →', close: 'ファイルを閉じる →', entering: 'SEIRAN へ入る', archive: 'FOG GATE GAMES // アーカイブ' },
   };
   const home = [
     { s: '.brand-copy small', pt: 'Estúdio Independente de Jogos', es: 'Estudio Independiente de Videojuegos' },
@@ -93,6 +95,8 @@
     { s: '.curtain-mark strong', pt: 'ENTRANDO EM SEIRAN', es: 'ENTRANDO EN SEIRAN' },
     { s: '.evidence-table', attr: 'data-label', pt: 'ARQUIVO DO CASO / SEIRAN', es: 'EXPEDIENTE / SEIRAN' },
   ];
+  home.forEach((entry, index) => { entry.ja = window.FGG_JA_HOME?.[index]; });
+  seiran.forEach((entry, index) => { entry.ja = window.FGG_JA_SEIRAN?.[index]; });
   const pageIsSeiran = document.body.classList.contains('seiran-landing');
   const spec = pageIsSeiran ? seiran : home;
   const originals = new Map();
@@ -119,11 +123,13 @@
       en: ['Fog Gate Games — Independent Game Studio','Fog Gate Games is an independent game studio creating atmospheric, story-driven experiences with strong visual identity and memorable characters.'],
       pt: ['Fog Gate Games — Estúdio Independente de Jogos','A Fog Gate Games é um estúdio independente que cria experiências atmosféricas e narrativas com identidade visual forte e personagens memoráveis.'],
       es: ['Fog Gate Games — Estudio Independiente de Videojuegos','Fog Gate Games es un estudio independiente que crea experiencias atmosféricas y narrativas con una identidad visual fuerte y personajes memorables.'],
+      ja: ['Fog Gate Games — 独立系ゲームスタジオ','Fog Gate Games は、強いビジュアルアイデンティティと印象的なキャラクターを軸に、雰囲気と物語を重視した作品を制作する独立系ゲームスタジオです。'],
     },
     seiran: {
       en: ['Enter Seiran | Fog Gate Games','Enter the world of The Girl in Seiran — an atmospheric preview from Fog Gate Games.'],
       pt: ['Entre em Seiran | Fog Gate Games','Entre no universo de The Girl in Seiran — uma prévia atmosférica da Fog Gate Games.'],
       es: ['Entra en Seiran | Fog Gate Games','Entra en el universo de The Girl in Seiran — una vista previa atmosférica de Fog Gate Games.'],
+      ja: ['Seiran へ入る | Fog Gate Games','The Girl in Seiran の世界へ — Fog Gate Games による雰囲気重視のプレビュー。'],
     },
   };
   const updateLanguageUI = (lang) => {
