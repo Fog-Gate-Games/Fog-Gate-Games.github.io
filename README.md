@@ -1,6 +1,6 @@
-# Fog Gate Games
+# Fog Gate Studios
 
-Official website for **Fog Gate Games**, an independent game studio focused on atmospheric, story-driven experiences.
+Official website for **Fog Gate Studios**, an independent game studio focused on atmospheric, story-driven experiences.
 
 ## Current project
 
@@ -8,4 +8,4 @@ Official website for **Fog Gate Games**, an independent game studio focused on a
 
 ## Website
 
-This repository is intended to power the official Fog Gate Games GitHub Pages site.
+This repository is intended to power the official Fog Gate Studios GitHub Pages site.
