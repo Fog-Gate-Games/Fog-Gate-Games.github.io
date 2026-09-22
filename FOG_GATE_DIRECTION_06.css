@@ -87,3 +87,8 @@ body{background:var(--void)!important;color:var(--frost)!important}
 .direction-home .upcoming-card p:not(.game-kicker){margin:0!important;max-width:520px!important;font-size:.92rem!important;line-height:1.5!important}
 .direction-home .upcoming-status{font-size:.62rem!important;color:#d6d7d8!important}
 @media(max-width:760px){.direction-home .game-content{padding:32px 24px!important}.direction-home .game-art{min-height:360px!important}.direction-home .upcoming-card{grid-template-columns:34px 1fr!important}.direction-home .upcoming-status{grid-column:2!important;justify-self:start!important;margin-top:12px!important}}
+
+/* Lock every section intro to the same editorial left edge. */
+body.direction-home .section-heading>div:last-child{display:flex!important;flex-direction:column!important;align-items:flex-start!important;text-align:left!important}
+body.direction-home .section-heading h2,body.direction-home .section-heading .section-intro{width:100%!important;text-align:left!important;margin-left:0!important;margin-right:0!important}
+body.direction-home .section-heading .section-intro{max-width:760px!important}
