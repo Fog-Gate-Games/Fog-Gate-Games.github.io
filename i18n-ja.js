@@ -82,5 +82,7 @@ window.FGG_JA_SEIRAN = [
   '← 前のファイル',
   '次のファイル →',
   'SEIRAN へ入る',
-  'ケースファイル / SEIRAN'
+  'ケースファイル / SEIRAN',
+  'Unityで開発',
+  'Unity is a trademark or registered trademark of Unity Technologies or its affiliates in the U.S. and elsewhere.'
 );

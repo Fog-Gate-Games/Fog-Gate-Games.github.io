@@ -94,6 +94,8 @@
     { s: '.case-next', pt: 'Próximo arquivo →', es: 'Siguiente archivo →' },
     { s: '.curtain-mark strong', pt: 'ENTRANDO EM SEIRAN', es: 'ENTRANDO EN SEIRAN' },
     { s: '.evidence-table', attr: 'data-label', pt: 'ARQUIVO DO CASO / SEIRAN', es: 'EXPEDIENTE / SEIRAN' },
+    { s: '.unity-credit', pt: 'Desenvolvido com Unity', es: 'Desarrollado con Unity' },
+    { s: '.unity-attribution', pt: 'Unity é uma marca ou marca registrada da Unity Technologies ou de suas afiliadas nos Estados Unidos e em outros países.', es: 'Unity es una marca comercial o marca registrada de Unity Technologies o sus afiliadas en Estados Unidos y otros países.' },
   ];
   home.forEach((entry, index) => { entry.ja = window.FGG_JA_HOME?.[index]; });
   seiran.forEach((entry, index) => { entry.ja = window.FGG_JA_SEIRAN?.[index]; });
