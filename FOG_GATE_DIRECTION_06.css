@@ -97,3 +97,11 @@ body.direction-home .section-heading .section-intro{max-width:760px!important}
 body.direction-home #studio .section-heading,body.direction-home #games .section-heading{grid-template-columns:minmax(180px,.3fr) minmax(0,1fr)!important;justify-content:stretch!important;gap:clamp(48px,7vw,140px)!important}
 body.direction-home .vision-panel{grid-template-columns:minmax(180px,.3fr) minmax(0,1fr)!important;gap:clamp(48px,7vw,140px)!important}
 @media(max-width:760px){body.direction-home #studio .section-heading,body.direction-home #games .section-heading,body.direction-home .vision-panel{grid-template-columns:1fr!important;gap:24px!important}}
+
+/* Official approved masthead: preserve the complete horizontal artwork. */
+body.direction-home .hero-wrap{height:clamp(190px,19vw,300px)!important;min-height:190px!important;background:#fff!important}
+body.direction-home .hero{height:100%!important;min-height:0!important;padding:0!important;background:#fff!important}
+body.direction-home .hero-atmosphere{background:#fff url('assets/fog-gate-official-website-banner.png') center/contain no-repeat!important;opacity:1!important;filter:none!important}
+body.direction-home .hero-atmosphere::after{display:none!important;background:none!important}
+body.direction-home .language-mini button{background:rgba(10,10,10,.88)!important;color:#fff!important}
+@media(max-width:760px){body.direction-home .hero-wrap{height:190px!important;min-height:190px!important}.direction-home .language-mini{top:12px!important;right:12px!important}.direction-home .language-mini button{padding:4px 6px!important}}
