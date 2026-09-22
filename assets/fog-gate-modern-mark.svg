@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Fog Gate modern mark">
+  <rect width="240" height="240" fill="none"/>
+  <path d="M38 38h62l20 24v118H72V78H38z" fill="#f1f1ee"/>
+  <path d="M202 38h-62l-20 24v118h48V78h34z" fill="#b9bdc0"/>
+  <rect x="91" y="104" width="58" height="18" rx="1" fill="#c31919"/>
+  <path d="M38 180h164" stroke="#f1f1ee" stroke-width="3" opacity=".45"/>
+</svg>
