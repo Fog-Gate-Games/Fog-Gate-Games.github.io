@@ -11,14 +11,22 @@
     es:{newsBody:['La base del personaje pasa del blockout a una silueta más humana, guiada por la atmósfera de Seiran en cada detalle.','Nuestra nueva dirección une tensión sobrenatural, luz precisa y señales futuristas contenidas.','Estamos ampliando la lista de proyectos sin perder el cuidado detrás de cada lugar inquietante.'],newsLinks:['Leer el diario del proyecto →','Sobre la dirección →','Ver la lista →'],upcomingBody:['Un nuevo mundo sobrenatural se forma más allá del primer portal.','Otra señal espera en la oscuridad. Pronto habrá más detalles.']},
     ja:{newsBody:['キャラクターの基礎はブロックアウトから、セイランの空気に導かれた人間らしいシルエットへ進んでいます。','新しい方向性は、超自然的な緊張感と精密な光、控えめな未来の信号を重ねます。','不穏な場所の背後にある丁寧な制作を守りながら、作品の幅を広げています。'],newsLinks:['開発ログを読む →','方向性について →','作品一覧を見る →'],upcomingBody:['最初のゲートの向こうで、新しい超自然の世界が形になっています。','暗闇で別の信号が待っています。詳細は近日公開。']}
   };
+  const gameCopy = {
+    en:{eyebrow:'02 · OUR GAMES',title:'Our first gate is opening.',intro:'The Girl in Seiran is our debut project — a story-driven psychological horror experience currently in active development.',status:'IN DEVELOPMENT',kicker:'FOG GATE STUDIOS · DEBUT TITLE',tagline:'“Some memories should stay buried.”',description:'A dark narrative journey surrounding Seiran Hospital. Aoi is drawn through memory, fear and a mystery that refuses to remain buried.',meta:['Psychological Horror','Narrative Adventure','Single-player','PC'],link:'Enter Seiran →',soon:'COMING SOON'},
+    pt:{eyebrow:'02 · NOSSOS JOGOS',title:'Nosso primeiro portal está se abrindo.',intro:'The Girl in Seiran é nosso projeto de estreia — uma experiência narrativa de terror psicológico em desenvolvimento.',status:'EM DESENVOLVIMENTO',kicker:'FOG GATE STUDIOS · TÍTULO DE ESTREIA',tagline:'“Algumas memórias deveriam permanecer enterradas.”',description:'Uma jornada narrativa sombria ao redor do Hospital Seiran. Aoi atravessa memória, medo e um mistério que se recusa a permanecer enterrado.',meta:['Terror psicológico','Aventura narrativa','Um jogador','PC'],link:'Entrar em Seiran →',soon:'EM BREVE'},
+    es:{eyebrow:'02 · NUESTROS JUEGOS',title:'Nuestro primer portal se está abriendo.',intro:'The Girl in Seiran es nuestro proyecto debut — una experiencia narrativa de terror psicológico en desarrollo.',status:'EN DESARROLLO',kicker:'FOG GATE STUDIOS · TÍTULO DEBUT',tagline:'“Algunos recuerdos deberían permanecer enterrados.”',description:'Un viaje narrativo oscuro alrededor del Hospital Seiran. Aoi atraviesa memoria, miedo y un misterio que se niega a permanecer enterrado.',meta:['Terror psicológico','Aventura narrativa','Un jugador','PC'],link:'Entrar en Seiran →',soon:'PRÓXIMAMENTE'},
+    ja:{eyebrow:'02 · ゲーム',title:'最初のゲートが開く。',intro:'The Girl in Seiranは、現在開発中の物語主導の心理ホラー作品です。',status:'開発中',kicker:'FOG GATE STUDIOS · デビュー作品',tagline:'「埋めておくべき記憶もある。」',description:'セイラン病院をめぐる暗い物語。AOIは記憶と恐怖、埋もれることを拒む謎をたどります。',meta:['心理ホラー','物語アドベンチャー','一人用','PC'],link:'セイランへ →',soon:'近日公開'}
+  };
   const apply = (lang) => {
     const c = copy[lang] || copy.en;
     const x = extras[lang] || extras.en;
+    const g = gameCopy[lang] || gameCopy.en;
     const set = (s, value) => { const el = document.querySelector(s); if (el) el.textContent = value; };
     const setAll = (s, values) => document.querySelectorAll(s).forEach((el,i) => { if (values[i] != null) el.textContent = values[i]; });
     setAll('.direction-nav-links a', c.nav); set('.direction-nav-brand', c.brand);
     set('#studio .eyebrow', c.newsEyebrow); set('#studio .section-heading h2', c.newsTitle); set('#studio .section-intro', c.newsIntro);
     set('#vision .eyebrow', c.visionEyebrow); set('#vision blockquote', c.visionQuote); setAll('#vision .vision-copy > p:not(.eyebrow)', c.visionBody);
+    set('#games .eyebrow', g.eyebrow); set('#games .section-heading h2', g.title); set('#games .section-intro', g.intro); set('.game-art .status', g.status); setAll('.game-kicker', [g.kicker,g.kicker,g.kicker]); set('.game-tagline', g.tagline); set('.game-description', g.description); setAll('.game-meta span', g.meta); set('.enter-seiran-link', g.link); setAll('.upcoming-status', [g.soon,g.soon]);
     setAll('.news-card h3', c.news); setAll('.news-card .news-date', c.newsDates); setAll('.news-card > p:not(.news-date)', x.newsBody); setAll('.news-card .text-link', x.newsLinks); setAll('.upcoming-card h3', c.upcoming); setAll('.upcoming-card p:not(.game-kicker)', x.upcomingBody);
     document.querySelectorAll('.language-mini button').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
   };
