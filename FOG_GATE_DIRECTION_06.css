@@ -75,3 +75,15 @@ body{background:var(--void)!important;color:var(--frost)!important}
 .direction-home .vision-copy{align-self:center!important}
 .direction-home .vision-copy>p:not(.eyebrow),.direction-home .vision-copy blockquote{margin-left:0!important;margin-right:0!important}
 @media(max-width:760px){.direction-home .section-heading>div:last-child{text-align:left!important}.direction-home .section-heading h2,.direction-home .section-intro{max-width:100%!important}.direction-home .vision-copy{align-self:start!important}}
+
+/* Compact game showcase: quiet hierarchy, no project-name labels, stronger impact lines. */
+.direction-home .game-showcase{max-width:1280px!important;margin-left:auto!important;margin-right:auto!important}
+.direction-home .game-art{min-height:460px!important}
+.direction-home .game-content{padding:44px!important}
+.direction-home .game-content .game-tagline{max-width:520px!important;font-size:clamp(1.35rem,2.2vw,2.25rem)!important}
+.direction-home .upcoming-games{max-width:1280px!important;margin-left:auto!important;margin-right:auto!important;gap:12px!important}
+.direction-home .upcoming-card{padding:20px 22px!important;grid-template-columns:42px 1fr auto!important;min-height:102px!important;align-items:center!important}
+.direction-home .upcoming-card h3,.direction-home .upcoming-card .game-kicker{display:none!important}
+.direction-home .upcoming-card p:not(.game-kicker){margin:0!important;max-width:520px!important;font-size:.92rem!important;line-height:1.5!important}
+.direction-home .upcoming-status{font-size:.62rem!important;color:#d6d7d8!important}
+@media(max-width:760px){.direction-home .game-content{padding:32px 24px!important}.direction-home .game-art{min-height:360px!important}.direction-home .upcoming-card{grid-template-columns:34px 1fr!important}.direction-home .upcoming-status{grid-column:2!important;justify-self:start!important;margin-top:12px!important}}
