@@ -92,3 +92,8 @@ body{background:var(--void)!important;color:var(--frost)!important}
 body.direction-home .section-heading>div:last-child{display:flex!important;flex-direction:column!important;align-items:flex-start!important;text-align:left!important}
 body.direction-home .section-heading h2,body.direction-home .section-heading .section-intro{width:100%!important;text-align:left!important;margin-left:0!important;margin-right:0!important}
 body.direction-home .section-heading .section-intro{max-width:760px!important}
+
+/* Shared section grid: 01, 02 and 03 use the same marker and copy columns. */
+body.direction-home #studio .section-heading,body.direction-home #games .section-heading{grid-template-columns:minmax(180px,.3fr) minmax(0,1fr)!important;justify-content:stretch!important;gap:clamp(48px,7vw,140px)!important}
+body.direction-home .vision-panel{grid-template-columns:minmax(180px,.3fr) minmax(0,1fr)!important;gap:clamp(48px,7vw,140px)!important}
+@media(max-width:760px){body.direction-home #studio .section-heading,body.direction-home #games .section-heading,body.direction-home .vision-panel{grid-template-columns:1fr!important;gap:24px!important}}
