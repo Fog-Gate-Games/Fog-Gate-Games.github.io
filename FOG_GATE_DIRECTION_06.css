@@ -1,0 +1,27 @@
+/* Fog Gate visual direction 06: cinematic black-horror system */
+:root{--signal:#c31919;--void:#050505;--charcoal:#101112;--mist:#9ca1a6;--frost:#ededeb}
+body{background:var(--void)!important;color:var(--frost)!important}
+.site-header{background:rgba(5,5,5,.86)!important;border-color:rgba(255,255,255,.14)!important;backdrop-filter:blur(14px);width:min(1200px,calc(100% - 36px))!important}
+.brand-copy strong,.nav a,.header-cta{letter-spacing:.18em;text-transform:uppercase}
+.brand-copy small{color:#878b90!important}
+.hero-wrap{min-height:76vh!important;background:#050505!important;position:relative;overflow:hidden}
+.hero-atmosphere{opacity:1!important;inset:0!important;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.43) 48%,rgba(0,0,0,.72) 100%),linear-gradient(0deg,rgba(0,0,0,.82),transparent 48%),url('assets/fog-gate-visual-direction-banner.png') center/cover no-repeat!important;filter:none!important}
+.hero{min-height:76vh!important;display:block!important;padding-top:150px!important;padding-bottom:72px!important}
+.hero-copy{max-width:760px!important;padding-top:5vh!important}
+.hero-overline{letter-spacing:.44em!important;color:#d7d7d4!important;font-size:.68rem!important}
+.hero h1{font-size:clamp(3.6rem,8vw,8rem)!important;line-height:.92!important;letter-spacing:.1em!important;text-transform:uppercase!important;max-width:900px!important}
+.hero h1 span{color:var(--signal)!important}
+.hero-text{max-width:440px!important;color:#d0d0cc!important;letter-spacing:.13em;text-transform:uppercase;font-size:.76rem!important;line-height:1.9!important}
+.hero-actions .button.primary{background:var(--signal)!important;border-color:var(--signal)!important;box-shadow:0 0 28px rgba(195,25,25,.25)}
+.hero-actions .button.ghost{border-color:rgba(255,255,255,.45)!important}
+.hero-signature{border-top-color:rgba(255,255,255,.28)!important;color:#b9b9b4!important;letter-spacing:.26em!important}
+.hero-studio-mark{display:none!important}.signal-strip{display:none!important}
+.direction-banner{position:relative;min-height:190px;padding:52px max(28px,calc((100% - 1180px)/2));display:flex;align-items:center;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.35),rgba(0,0,0,.82)),url('assets/fog-gate-visual-direction-banner.png') center 58%/cover no-repeat;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18)}
+.direction-banner:after{content:"";position:absolute;left:0;bottom:0;width:28%;height:3px;background:var(--signal)}
+.direction-banner p{margin:0 0 16px;color:#c8c8c4;letter-spacing:.42em;font-size:.65rem;text-transform:uppercase}.direction-banner h2{margin:0;text-transform:uppercase;letter-spacing:.16em;font-size:clamp(1.65rem,3vw,3.1rem);font-weight:500}.direction-banner span{display:block;margin-top:16px;color:#b9b9b5;letter-spacing:.25em;text-transform:uppercase;font-size:.68rem}
+.section-pad{padding-top:92px!important;padding-bottom:92px!important}
+.studio,.vision,.contact{background:var(--void)!important}.games{background:#0b0c0d!important}
+.section-heading h2,.contact-panel h2{letter-spacing:.08em!important;text-transform:uppercase!important}.eyebrow{color:#c1c1bd!important;letter-spacing:.38em!important}.section-line{background:var(--signal)!important}
+.game-showcase,.vision-panel,.contact-panel{border-color:rgba(255,255,255,.14)!important;background:#111213!important}.game-content h3{letter-spacing:.12em!important;text-transform:uppercase!important}.status i{background:var(--signal)!important}
+.footer{border-top-color:rgba(255,255,255,.14)!important}.footer-brand strong{letter-spacing:.2em;text-transform:uppercase}
+@media(max-width:760px){.site-header{width:calc(100% - 20px)!important}.hero{padding:150px 20px 80px!important;min-height:80vh!important}.hero h1{font-size:clamp(2.5rem,12vw,5rem)!important;letter-spacing:.07em!important}.hero-text{font-size:.68rem!important}.direction-banner{padding:58px 22px;min-height:220px}.direction-banner h2{font-size:1.55rem}.section-pad{padding-top:84px!important;padding-bottom:84px!important}}
