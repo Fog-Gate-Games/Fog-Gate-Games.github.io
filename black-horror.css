@@ -45,6 +45,10 @@ body::after{opacity:.08;background-image:linear-gradient(rgba(255,255,255,.018) 
 .studio-statement em{color:var(--accent)!important}
 .principles article:hover{transform:translateY(-3px)!important;border-color:rgba(200,30,30,.45)!important}
 .game-content h3{font-family:Inter,system-ui,sans-serif!important;font-weight:500!important}
+.game-content{background:linear-gradient(145deg,#171819,#101112)!important;color:var(--text)!important}
+.game-content h3{color:#f0efed!important}
+.game-description,.game-tagline{color:#b4b5b6!important}
+.game-meta span{color:#c2c3c4!important;border-color:rgba(236,235,234,.2)!important}
 .game-kicker{color:#b5b6b8!important;letter-spacing:.24em!important}
 .text-link{color:#f0efed!important;letter-spacing:.16em!important;text-transform:uppercase!important;font-size:.68rem!important}
 .text-link::after{background:var(--accent)!important}
