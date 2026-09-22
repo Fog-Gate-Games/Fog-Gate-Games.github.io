@@ -23,6 +23,18 @@
     extras[lang].newsBody.push(...addedNews[lang].bodies);
     extras[lang].newsLinks.push(...addedNews[lang].links);
   });
+  const unityNews = {
+    en:{title:'The Girl in Seiran is being built with Unity.',date:'22 SEP 2026 · 04:05 BRT · UNITY DEVELOPMENT',body:'Our debut psychological horror game is now being developed in Unity, giving the team the foundation to shape Seiran\'s atmosphere, spaces and unsettling details.',link:'Enter the project →'},
+    pt:{title:'The Girl in Seiran está sendo desenvolvido na Unity.',date:'22 SET 2026 · 04:05 BRT · DESENVOLVIMENTO NA UNITY',body:'Nosso jogo de estreia, um terror psicológico, agora está sendo desenvolvido na Unity, dando à equipe a base para construir a atmosfera, os espaços e os detalhes inquietantes de Seiran.',link:'Entrar no projeto →'},
+    es:{title:'The Girl in Seiran se está desarrollando con Unity.',date:'22 SEP 2026 · 04:05 BRT · DESARROLLO EN UNITY',body:'Nuestro juego debut, un título de terror psicológico, ahora se está desarrollando con Unity, dando al equipo la base para construir la atmósfera, los espacios y los detalles inquietantes de Seiran.',link:'Entrar al proyecto →'},
+    ja:{title:'The Girl in SeiranはUnityで開発されています。',date:'2026年9月22日 · 04:05 BRT · UNITY開発',body:'デビュー作となる心理ホラーゲームは現在Unityで開発されており、セイランの雰囲気、空間、不穏な細部を形にするための基盤をチームに与えています。',link:'プロジェクトに入る →'}
+  };
+  Object.keys(unityNews).forEach(lang => {
+    copy[lang].news[2] = unityNews[lang].title;
+    copy[lang].newsDates[2] = unityNews[lang].date;
+    extras[lang].newsBody[2] = unityNews[lang].body;
+    extras[lang].newsLinks[2] = unityNews[lang].link;
+  });
   const gameCopy = {
     en:{eyebrow:'02 · OUR GAMES',title:'Our first gate is opening.',intro:'The Girl in Seiran is our debut project — a story-driven psychological horror experience currently in active development.',status:'IN DEVELOPMENT',kicker:'FOG GATE STUDIOS · DEBUT TITLE',tagline:'“Some memories should stay buried.”',description:'A dark narrative journey surrounding Seiran Hospital. Aoi is drawn through memory, fear and a mystery that refuses to remain buried.',meta:['Psychological Horror','Narrative Adventure','Single-player','PC'],link:'Enter Seiran →',soon:'COMING SOON'},
     pt:{eyebrow:'02 · NOSSOS JOGOS',title:'Nosso primeiro portal está se abrindo.',intro:'The Girl in Seiran é nosso projeto de estreia — uma experiência narrativa de terror psicológico em desenvolvimento.',status:'EM DESENVOLVIMENTO',kicker:'FOG GATE STUDIOS · TÍTULO DE ESTREIA',tagline:'“Algumas memórias deveriam permanecer enterradas.”',description:'Uma jornada narrativa sombria ao redor do Hospital Seiran. Aoi atravessa memória, medo e um mistério que se recusa a permanecer enterrado.',meta:['Terror psicológico','Aventura narrativa','Um jogador','PC'],link:'Entrar em Seiran →',soon:'EM BREVE'},
